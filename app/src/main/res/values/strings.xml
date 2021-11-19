@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Locations</string>
+    <string name="enter_longitude">Enter Longitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="address">Address</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="enter_latitude">Enter Latitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="view">View</string>
+    <string name="add_address">Add Address</string>
+    <string name="update">Update</string>
+    <string name="enter_address_to_delete_data">Enter Address to Delete Data</string>
+    <string name="delete">Delete</string>
+    <string name="current_address">Current Address</string>
+    <string name="new_address">New Address</string>
+</resources>

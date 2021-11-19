@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_database"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mylocations.DbUpdate"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="-2dp"
+        android:gravity="center"
+        android:hint="@string/enter_longitude"
+        android:text="@string/longitude"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:text="@string/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentStart="true"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:hint="@string/enter_address"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textStyle="bold|italic"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:hint="@string/enter_latitude"
+        android:text="@string/latitude"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:text="@string/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:textSize="18sp"
+        android:onClick="viewdata"
+        android:textStyle="bold|italic"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignEnd="@+id/button4"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editLatitude"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="169dp"
+        android:onClick="addAddress"
+        android:text="@string/add_address"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:text="@string/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:onClick="update"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/editText3"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button2"
+        android:ems="10"
+        android:freezesText="false"
+        android:hint="@string/enter_address_to_delete_data"
+        android:inputType="textPostalAddress"
+        android:minHeight="48dp" />
+
+    <Button
+        android:text="@string/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:id="@+id/button4"
+        android:onClick="delete"
+        android:textStyle="normal|bold"
+        tools:ignore="RelativeOverlap"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="@string/current_address"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/editLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:hint="@string/enter_latitude"
+        android:inputType="numberSigned"
+        android:minHeight="48dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:hint="@string/enter_longitude"
+        android:inputType="numberSigned"
+        android:minHeight="48dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_alignTop="@+id/button3"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/new_address"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
+</RelativeLayout>
